@@ -12,9 +12,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "machinary")
 public class Machinary implements Serializable {
-	
-	
+		
 	private static final long serialVersionUID = -723583058586873479L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
