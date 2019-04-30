@@ -123,11 +123,15 @@
 			</props>
 		</property>
 	</bean> -->
-	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	
+	
+	
+	
+	<!-- <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 		<property name="host" value="smtp.gmail.com" />
 		<property name="port" value="587" />
-		<property name="username" value="synergy.hrms@gmail.com" />
-		<property name="password" value="syn12345" />
+		<property name="username" value="test.nazdaqtech@gmail.com"/>
+		<property name="password" value="a_123456"/>
 		<property name="javaMailProperties">
 			<props>
 				<prop key="mail.transport.protocol">smtp</prop>
@@ -136,6 +140,29 @@
 				<prop key="mail.smtp.ssl.trust">smtp.gmail.com</prop>
 			</props>
 		</property>
+	</bean> -->
+	
+	
+	
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.mailtrap.io" />
+		<property name="port" value="2525" />
+		<property name="username" value="6e6e6555d6ced6"/>
+		<property name="password" value="cbc47460b89046"/>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.ssl.trust">smtp.mailtrap.io</prop>
+			</props>
+		</property>
 	</bean>
-
+	
+	
+	
+	
+	
+	
+	
 </beans>

@@ -73,11 +73,11 @@
 	src="${pageContext.request.contextPath}/resource/dataTable/buttons.html5.min.js"></script>
 <script
 	src="${pageContext.request.contextPath}/resource/dataTable/buttons.print.min.js"></script>
-	
-	
-	<script
+
+
+<script
 	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
-	<link
+<link
 	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css"
 	rel="stylesheet" type="text/css">
 
@@ -145,111 +145,155 @@
 			</a> <b class="arrow"></b></li>
 
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
-			<li class=""><a href="javascript:void(0)"
-				class="dropdown-toggle"> <i class="menu-icon fa fa-gear fa-spin"></i>
-					<span class="menu-text"> Settings </span> <b
-					class="arrow fa fa-angle-down"></b>
-			</a> <b class="arrow"></b>
+				<li class=""><a href="javascript:void(0)"
+					class="dropdown-toggle"> <i
+						class="menu-icon fa fa-gear fa-spin"></i> <span class="menu-text">
+							Settings </span> <b class="arrow fa fa-angle-down"></b>
+				</a> <b class="arrow"></b>
 
-				<ul class="submenu">
-					
+					<ul class="submenu">
 
-					
-						
-					<li class=""><a href="javascript:void(0)"
-						class="dropdown-toggle"><i class="menu-icon fa fa-calendar purple"></i> Bank <b
-							class="arrow fa fa-angle-down"></b>
-					</a> <b class="arrow"></b>
 
-						<ul class="submenu">
-							
-							<li class=""><a
-								href="${pageContext.request.contextPath}/addBank">
-									<i class="menu-icon fa fa-plus purple"></i> Add Bank
-							</a> <b class="arrow"></b>
-							</li>
 
-							<li class=""><a
-								href="${pageContext.request.contextPath}/bankList"> <i
-									class="menu-icon fa fa-list purple"></i> Bank List
-							</a> <b class="arrow"></b>
-							</li>
-							
-							<li class=""><a
-								href="${pageContext.request.contextPath}/addBankBranch"> <i
-									class="menu-icon fa fa-plus"></i> Add Branch
-							</a> <b class="arrow"></b>
-							</li>
-							
-							<li class=""><a
-								href="${pageContext.request.contextPath}/branchBankList"> <i
-									class="menu-icon fa fa-list"></i> Branch List
-							</a> <b class="arrow"></b>
-							</li>
-						</ul>
-						
-						</li>
-						
+
 						<li class=""><a href="javascript:void(0)"
-						class="dropdown-toggle"><i class="menu-icon fa fa-calendar purple"></i> Nbfi <b
-							class="arrow fa fa-angle-down"></b>
-					</a> <b class="arrow"></b>
+							class="dropdown-toggle"><i
+								class="menu-icon fa fa-calendar purple"></i> Bank <b
+								class="arrow fa fa-angle-down"></b> </a> <b class="arrow"></b>
 
-						<ul class="submenu">
-						
-							<li class=""><a
-								href="${pageContext.request.contextPath}/addNbfi">
-									<i class="menu-icon fa fa-plus purple"></i> Add Nbfi
-							</a> <b class="arrow"></b></li>
+							<ul class="submenu">
 
-							<li class=""><a
-								href="${pageContext.request.contextPath}/nbfiList"> <i
-									class="menu-icon fa fa-list"></i> Nbfi List
-							</a> <b class="arrow"></b>
-							</li>
-							
-							<li class=""><a
-								href="${pageContext.request.contextPath}/addNbfiBranch"> <i
-									class="menu-icon fa fa-plus"></i> Add Branch
-							</a> <b class="arrow"></b>
-							</li>
-							
-							<li class="">
-							<a href="${pageContext.request.contextPath}/branchNbfiList"> <i
-									class="menu-icon fa fa-list"></i> Branch List
-							</a> <b class="arrow"></b>
-							</li>
-							
-						</ul>
-						
-						</li>
-						
+								<li class=""><a
+									href="${pageContext.request.contextPath}/addBank"> <i
+										class="menu-icon fa fa-plus purple"></i> Add Bank
+								</a> <b class="arrow"></b></li>
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/bankList"> <i
+										class="menu-icon fa fa-list purple"></i> Bank List
+								</a> <b class="arrow"></b></li>
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/addBankBranch"> <i
+										class="menu-icon fa fa-plus"></i> Add Branch
+								</a> <b class="arrow"></b></li>
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/branchBankList"> <i
+										class="menu-icon fa fa-list"></i> Branch List
+								</a> <b class="arrow"></b></li>
+							</ul></li>
+
 						<li class=""><a href="javascript:void(0)"
-						class="dropdown-toggle"><i class="menu-icon fa fa-calendar purple"></i> District <b
-							class="arrow fa fa-angle-down"></b>
-					</a> <b class="arrow"></b>
+							class="dropdown-toggle"><i
+								class="menu-icon fa fa-calendar purple"></i> Nbfi <b
+								class="arrow fa fa-angle-down"></b> </a> <b class="arrow"></b>
 
-						<ul class="submenu">
-						
-							<li class=""><a
-								href="${pageContext.request.contextPath}/addDistrict">
-									<i class="menu-icon fa fa-plus purple"></i> Add District
-							</a> <b class="arrow"></b></li>
+							<ul class="submenu">
 
-							<li class=""><a
-								href="${pageContext.request.contextPath}/districtList"> <i
-									class="menu-icon fa fa-list"></i> District List
-							</a> <b class="arrow"></b>
-							</li>
-							
-						</ul>
-						
-						</li>
-						
-				</ul> </li>
+								<li class=""><a
+									href="${pageContext.request.contextPath}/addNbfi"> <i
+										class="menu-icon fa fa-plus purple"></i> Add Nbfi
+								</a> <b class="arrow"></b></li>
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/nbfiList"> <i
+										class="menu-icon fa fa-list"></i> Nbfi List
+								</a> <b class="arrow"></b></li>
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/addNbfiBranch"> <i
+										class="menu-icon fa fa-plus"></i> Add Branch
+								</a> <b class="arrow"></b></li>
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/branchNbfiList"> <i
+										class="menu-icon fa fa-list"></i> Branch List
+								</a> <b class="arrow"></b></li>
+
+							</ul></li>
+
+						<li class=""><a href="javascript:void(0)"
+							class="dropdown-toggle"><i
+								class="menu-icon fa fa-calendar purple"></i> District <b
+								class="arrow fa fa-angle-down"></b> </a> <b class="arrow"></b>
+
+							<ul class="submenu">
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/addDistrict"> <i
+										class="menu-icon fa fa-plus purple"></i> Add District
+								</a> <b class="arrow"></b></li>
+
+								<li class=""><a
+									href="${pageContext.request.contextPath}/districtList"> <i
+										class="menu-icon fa fa-list"></i> District List
+								</a> <b class="arrow"></b></li>
+
+							</ul></li>
+
+					</ul></li>
 			</sec:authorize>
 
-			
+
+
+			<li class=""><a href="javascript:void(0)"
+				class="dropdown-toggle"><i
+					class="menu-icon fa fa-calendar purple"></i> Properties <b
+					class="arrow fa fa-angle-down"></b> </a> <b class="arrow"></b>
+
+				<ul class="submenu">
+
+					<li class=""><a
+						href="${pageContext.request.contextPath}/land"> <i
+							class="menu-icon fa fa-plus purple"></i> Land
+					</a> <b class="arrow"></b></li>
+
+					<li class=""><a
+						href="${pageContext.request.contextPath}/building"> <i
+							class="menu-icon fa fa-list purple"></i> Building
+					</a> <b class="arrow"></b></li>
+
+					<li class=""><a
+						href="${pageContext.request.contextPath}/flat"> <i
+							class="menu-icon fa fa-plus"></i> Flat
+					</a> <b class="arrow"></b></li>
+
+					<li class=""><a
+						href="${pageContext.request.contextPath}/machinary"> <i
+							class="menu-icon fa fa-list"></i> Machinary
+					</a> <b class="arrow"></b></li>
+				</ul></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		</ul>
 		<!-- /.nav-list -->
 

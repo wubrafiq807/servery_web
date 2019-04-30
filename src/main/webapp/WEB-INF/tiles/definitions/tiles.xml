@@ -21,99 +21,132 @@
 		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
 	</definition>
 
-	<!-- Home Page Start-->
+	<!-- Home Page Start -->
 	<definition name="index" extends="base-definition">
 		<put-attribute name="title" value="Dashboard | PRMS" />
 		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="addBank" extends="base-definition">
 		<put-attribute name="title" value="Add Bank" />
 		<put-attribute name="body" value="/WEB-INF/views/bank/create.jsp" />
 	</definition>
-	
+
 
 	<definition name="bankList" extends="base-definition">
 		<put-attribute name="title" value=" Bank List" />
 		<put-attribute name="body" value="/WEB-INF/views/bank/list.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="editBank" extends="base-definition">
 		<put-attribute name="title" value="Edit Bank" />
 		<put-attribute name="body" value="/WEB-INF/views/bank/edit.jsp" />
 	</definition>
-	
+
 	<definition name="addNbfi" extends="base-definition">
 		<put-attribute name="title" value="Add Bank" />
 		<put-attribute name="body" value="/WEB-INF/views/nbfi/create.jsp" />
 	</definition>
-	
+
 
 	<definition name="nbfiList" extends="base-definition">
 		<put-attribute name="title" value=" Bank List" />
 		<put-attribute name="body" value="/WEB-INF/views/nbfi/list.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="editNbfi" extends="base-definition">
 		<put-attribute name="title" value="Edit Bank" />
 		<put-attribute name="body" value="/WEB-INF/views/nbfi/edit.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="addBankBranch" extends="base-definition">
 		<put-attribute name="title" value="Add Branch Bank" />
-		<put-attribute name="body" value="/WEB-INF/views/branchBank/create.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/branchBank/create.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="branchBankList" extends="base-definition">
 		<put-attribute name="title" value=" Branch Bank List" />
 		<put-attribute name="body" value="/WEB-INF/views/branchBank/list.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="editBankBranch" extends="base-definition">
 		<put-attribute name="title" value="Edit Branch Bank" />
 		<put-attribute name="body" value="/WEB-INF/views/branchBank/edit.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="addNbfiBranch" extends="base-definition">
 		<put-attribute name="title" value="Add Branch Nbfi" />
-		<put-attribute name="body" value="/WEB-INF/views/branchNbfi/create.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/branchNbfi/create.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="branchNbfiList" extends="base-definition">
 		<put-attribute name="title" value=" Branch Nbfi List" />
 		<put-attribute name="body" value="/WEB-INF/views/branchNbfi/list.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="editNbfiBranch" extends="base-definition">
 		<put-attribute name="title" value="Edit Branch Nbfi" />
 		<put-attribute name="body" value="/WEB-INF/views/branchNbfi/edit.jsp" />
 	</definition>
-	
+
 	<definition name="addDistrict" extends="base-definition">
 		<put-attribute name="title" value="Add District" />
 		<put-attribute name="body" value="/WEB-INF/views/district/create.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="districtList" extends="base-definition">
 		<put-attribute name="title" value=" Branch District List" />
 		<put-attribute name="body" value="/WEB-INF/views/district/list.jsp" />
 	</definition>
-	
-	
+
+
 	<definition name="editDistrict" extends="base-definition">
 		<put-attribute name="title" value="Edit District" />
 		<put-attribute name="body" value="/WEB-INF/views/district/edit.jsp" />
 	</definition>
+
+
+
+	<definition name="landList" extends="base-definition">
+		<put-attribute name="title" value=" Land List" />
+		<put-attribute name="body" value="/WEB-INF/views/land/list.jsp" />
+	</definition>
+
+
+
+
+	<definition name="buildingList" extends="base-definition">
+		<put-attribute name="title" value=" Building List" />
+		<put-attribute name="body" value="/WEB-INF/views/building/list.jsp" />
+	</definition>
+
+
+
+
+	<definition name="flatList" extends="base-definition">
+		<put-attribute name="title" value=" Flat List" />
+		<put-attribute name="body" value="/WEB-INF/views/flat/list.jsp" />
+	</definition>
 	
 	
+	
+	
+	
+	<definition name="machinaryList" extends="base-definition">
+		<put-attribute name="title" value=" Machinary List" />
+		<put-attribute name="body" value="/WEB-INF/views/machinary/list.jsp" />
+	</definition>
+
 </tiles-definitions>
