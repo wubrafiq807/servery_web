@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,11 +30,13 @@ import com.nazdaq.srvm.model.Flat;
 import com.nazdaq.srvm.model.Land;
 import com.nazdaq.srvm.model.Machinary;
 import com.nazdaq.srvm.model.Nbfi;
+
 import com.nazdaq.srvm.model.NbfiApplicant;
 import com.nazdaq.srvm.service.CommonService;
 import com.nazdaq.srvm.util.Constants;
 import com.nazdaq.srvm.util.SendEmail;
 import com.nazdaq.srvm.util.SendSms;
+
 
 @RestController
 @RequestMapping("v1")
@@ -44,12 +45,14 @@ public class ApiController extends SavedRequestAwareAuthenticationSuccessHandler
 	@Autowired
 	private CommonService commonService;
 
+
 	@Autowired
 	private JavaMailSender mailSender;
 
 	/*
 	 * @Value("${cc.email.addresss}") String ccEmailAddresss;
 	 */
+
 
 	@RequestMapping(value = "/getList", method = RequestMethod.GET)
 	public HashMap<String, Object> getbankList(@RequestParam("type") String type, HttpSession session) {
@@ -118,7 +121,7 @@ public class ApiController extends SavedRequestAwareAuthenticationSuccessHandler
 			// ======================= START: Email Process ================================
 			String mailtitle = "NEW Test Mail";
 
-			String mailBody = "<h1>Hello Dear, <br>I am Jehad</h1>";
+			String mailBody = "<h1>Dear Sir,</h1> <br> <h3>Greetings This is a test mail</h3>";
 
 			sendEmail.sendmailToUser(mailSender, "smhoque100@gmail.com", mailtitle, mailBody, "", "", "");
 
@@ -329,6 +332,7 @@ public class ApiController extends SavedRequestAwareAuthenticationSuccessHandler
 		commonService.saveOrUpdateModelObjectToDB(bankApplicant);
 	}
 	
+
 	public void saveNbfiInfo(String bankNbfiAddress, String email, String name, String phone) {
 		// Save Nbfi Applicant
 		
@@ -348,6 +352,7 @@ public class ApiController extends SavedRequestAwareAuthenticationSuccessHandler
 	}
 
 	
+
 	
 	public void saveCustomerInfo(String bankNbfiAddress, String email, String name, String phone) {
 		// Save Customer Applicant
