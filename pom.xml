@@ -17,7 +17,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>4.2.5.RELEASE</version> <!-- 4.0.3 -->
+			<version>5.3.18</version> <!-- 4.0.3 -->
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
